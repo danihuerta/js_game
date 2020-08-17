@@ -1,0 +1,175 @@
+@font-face {
+    font-family: 'icomoon';
+    src:  url('../fonts/icomoon.eot?ux047u');
+    src:  url('../fonts/icomoon.eot?ux047u#iefix') format('embedded-opentype'),
+      url('../fonts/icomoon.ttf?ux047u') format('truetype'),
+      url('../fonts/icomoon.woff?ux047u') format('woff'),
+      url('../fonts/icomoon.svg?ux047u#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+  }
+  
+  [class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: never;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+  
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  .icon-game:before {
+    content: "\e900";
+  }
+  
+
+body{
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    font-family: 'Roboto', sans-serif;
+    background: rgb(57,175,228);
+    background: linear-gradient(180deg, rgba(57,175,228,1) 26%, rgba(95,230,197,1) 95%);
+}
+
+.header{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 70px;
+    padding-left: 30px;
+}
+
+.header__icon{
+    color: white;
+    font-size: 30px;
+}
+.header__title{
+    color: white;
+    font-size: 12px;
+    margin-left: 15px;
+}
+
+main{    
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-rows: 1fr 2fr 1fr;
+    height: calc(100% - 70px);
+}
+
+.main-first{
+    align-self: stretch;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.main-first__title{
+    color: white;
+    font-size: 40px;
+}
+
+.main-first__button{
+    background-color: rgba(255,255,255,0.3);
+    outline: none;
+    border: 1px solid white;
+    color: white;
+    padding: 13px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition-property: background-color, color;
+    transition-duration: 0.5s;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.main-first__button:hover{
+    background-color: rgba(255,255,255,0.8);
+    color: rgb(57,175,228);
+}
+
+.main-second{
+    /* background-color: red; */
+    align-self: stretch;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.score{
+    /* background-color: blue; */
+    width: 300px;
+    height: 150px;
+    position: relative;
+    border: 3px solid white;
+    border-radius: 30px;
+}
+
+.score__user{
+    background-color: #39afe4;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    padding: 3px;
+    color: white;
+    width: 70px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+}
+
+.score__user.user{
+    top: 50px;
+    left: -30px;
+}
+
+.score__user.pc{
+    top:50px;
+    right:-30px;
+}
+
+.score-points{
+    justify-content: center;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    font-size: 55px; 
+    letter-spacing: 3px; 
+    color: white;
+}
+
+.main-third{    
+    /* background-color: red; */
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.choice__img{
+    width: 100px;
+    margin: 30px;
+    padding: 10px;
+    /* border: 2px solid white; */
+    border-radius: 40px;
+    cursor: pointer;
+    background-color: rgba(255,255,255,0.3);
+}
+
+.choice__img:hover{
+    background-color: rgba(255,255,255,0.7);
+}

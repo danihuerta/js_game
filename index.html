@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/main.css">
+    <title>Rock Paper Scissors</title>
+</head>
+<body>
+    <header class="header">
+        <a href="/" class="header__icon">
+           <i class="icon-game"></i>
+        </a>
+        <span class="header__title">
+            <h1>DH Games</h1>
+        </span>        
+    </header>
+    <main>
+        <section class="main-first">
+            <h1 class="main-first__title">Rock - Paper - Scissors</h1>
+            <button class="main-first__button">Restart game</button>
+        </section>
+        <section class="main-second">
+            <div class="score">
+                <div class="score__user user">User</div>
+                <div class="score-points">
+                    <span id="user-points">0</span>
+                    <span>:</span>
+                    <span id="pc-points">0</span>
+                </div>
+                <div class="score__user pc">PC</div>
+            </div>
+        </section>
+        <section class="main-third">
+            <div class="choice">
+                <img class="choice__img" src="images/angry-fist.png" id="rock" alt="" onclick="start(this.id)">
+                <img class="choice__img" id="scissors" src="images/hand-scissors.png" alt="" onclick="start(this.id)">
+                <img id="paper" class="choice__img" src="images/so-so.png" alt="" onclick="start(this.id)">
+            </div>
+        </section>
+    </main>
+    <script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>
