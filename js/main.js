@@ -59,3 +59,8 @@ function start(id){
 function random(min,max){
     return Math.floor(Math.random()*(max-min+1)) + min;
 }
+
+function restart(){
+    document.getElementById("pc-points").innerHTML = "0"
+    document.getElementById("user-points").innerHTML = "0"
+}
